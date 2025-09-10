@@ -43,7 +43,7 @@ def right():
 right() """
 
 
-def rectangle(x,y):
+""" def rectangle(x,y):
     t.forward(x)
     t.left(90)
     t.forward(y)
@@ -61,5 +61,14 @@ def triangle(x):
     t.forward(x)
     t.right(120)
     t.forward(x)
-triangle(90)
+triangle(90) """
+
+
+""" for i in range(3):
+    print(i) """
+
+def square():
+    for i in range(4):
+      t.forward(100)
+      t.left(90)
 
