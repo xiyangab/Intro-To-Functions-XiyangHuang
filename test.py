@@ -1,8 +1,9 @@
+# Using The Turtle Library
 import turtle
 from turtle import *
 t = Turtle()
 
-
+#  Our First Line and Shapes
 t.shape('turtle')
 """ t.forward(200) """
 
@@ -13,7 +14,7 @@ message("Hello Class")
 message("Hola Class")
 message("Good Afternoon")
 
-
+# Shapes in Turtle
 """ def square(x):
     t.forward(x)
     t.left(90)
@@ -63,12 +64,63 @@ def triangle(x):
     t.forward(x)
 triangle(90) """
 
-
+# Starting "Loops in Python"
 """ for i in range(3):
     print(i) """
 
-def square():
+# Refactor and Challenges
+""" def square():
     for i in range(4):
       t.forward(100)
       t.left(90)
 
+
+t.speed(20)
+
+
+def circle():
+   for i in range(61):
+    square()
+    t.right(5)
+circle() """
+
+# Variables
+""" sidelength = 100
+rotate = 120
+def triangle(x,y):
+   for i in range(3):
+      t.forward(x)
+      t.left(y)
+triangle(100,120) """
+
+# Manipulating Variables
+""" def square(x,y):
+   for i in range(4):
+      t.forward(x)
+      t.left(y)
+
+
+def doubleSquares(iRange):
+   length = 25
+   for i in range(iRange):
+      square(length,90)
+      length = length * 2
+doubleSquares(5) """
+
+# Assesment
+length = 5
+rotate = 90
+
+
+def square():
+    for i in range(4):
+        t.forward(length)
+        t.right(rotate)
+
+
+def rotatingSquare(iRange):
+    for i in range(iRange):
+        square()
+        length = length + 5
+        rotate = rotate + 5
+rotatingSquare(61)
