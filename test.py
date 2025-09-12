@@ -108,19 +108,35 @@ def doubleSquares(iRange):
 doubleSquares(5) """
 
 # Assesment
-length = 5
-rotate = 90
-
-
-def square():
+""" def square(x,y):
     for i in range(4):
-        t.forward(length)
-        t.right(rotate)
+        t.forward(x)
+        t.left(y)
 
 
-def rotatingSquare(iRange):
+def doubleSquares(iRange):
+    length = 5
+    rotate = 5
     for i in range(iRange):
-        square()
+        square(length,90)
         length = length + 5
-        rotate = rotate + 5
-rotatingSquare(61)
+        t.right(rotate)
+doubleSquares(61) """
+
+# Assesment 2
+t.speed(100)
+
+
+def star(x,y):
+    for i in range(6):
+        t.forward(x)
+        t.left(y)
+
+
+def doubleStars(iRange):
+    length = 5
+    for i in range(iRange):
+        star(length,144)
+        length = length + 5
+        t.right(270)
+doubleStars(61)
