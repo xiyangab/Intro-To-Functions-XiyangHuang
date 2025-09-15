@@ -116,27 +116,28 @@ doubleSquares(5) """
 
 def doubleSquares(iRange):
     length = 5
-    rotate = 5
     for i in range(iRange):
         square(length,90)
         length = length + 5
-        t.right(rotate)
+        t.right(5)
 doubleSquares(61) """
 
 # Assesment 2
-t.speed(100)
-
+t.speed(200)
 
 def star(x,y):
-    for i in range(6):
-        t.forward(x)
-        t.left(y)
+    for i in range(5):
+       t.forward(x)
+       t.left(144)
 
 
 def doubleStars(iRange):
     length = 5
     for i in range(iRange):
         star(length,144)
+        t.right(5)
         length = length + 5
-        t.right(270)
-doubleStars(61)
+doubleStars(65)
+
+
+turtle.done()
