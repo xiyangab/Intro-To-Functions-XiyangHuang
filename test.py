@@ -137,7 +137,7 @@ def doubleStars(iRange):
         star(length,144)
         t.right(5)
         length = length + 5
-doubleStars(65)
+doubleStars(67)
 
 
 turtle.done()
